@@ -1,0 +1,40 @@
+
+<div class="card bg-dark text-white "  >
+    <div class="card-body">
+      
+  
+      <form>
+        <div class="form-group row">
+          <label for="dato1" class="col-form-label col-sm-2">PrimerDato</label>
+          <div >
+            <input type="text" name="primerNombre" class="form-control" [(ngModel)]="cliente.primerNombre" placeholder="Ingresar dato uno" >  <br>
+          </div>
+        </div>
+  
+        <div class="form-group row">
+          <label for="dato2" class="col-form-label col-sm-2">SegundoDato</label>
+          <div >
+            <input type="text" name="segundoNombre" class="form-control" [(ngModel)]="cliente.segundoNombre" placeholder="Ingrese dato dos" ><br>
+          </div>
+        </div>
+      
+
+        <div class="form-group row">
+          <div >
+            <button class="btn btn-primary" role="button" (click)='create()'>Enviar</button> 
+          </div>
+        </div>
+        
+      </form>
+  
+    </div>
+  </div>
+
+  <app-clientes></app-clientes>
+ 
+  <div class="form-group row">
+    <div >
+      <button class="btn btn-primary" role="button" (click)='update()'>PROCESAR</button> 
+    </div>
+  </div>
+  
